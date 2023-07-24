@@ -1,0 +1,49 @@
+<form onsubmit="return false;">
+	<label for="fname">First Name:</label>
+	<br/>
+	<input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+	<label for="lname">Last Name:</label>
+	<br/>
+	<input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+
+	<input type="submit" value="Submit">
+</form>
+<style type="text/css">
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+	}
+	input[type="text"] {
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border: none;
+		box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		width: 300px;
+	}
+	input[type="submit"] {
+		padding: 10px;
+		background-color: #4CAF50;
+		color: white;
+		border-radius: 5px;
+		border: none;
+		box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		cursor: pointer;
+	}
+</style>
+
+<script type="text/javascript">
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  console.log(`First Name: ${fname} Last Name: ${lname}`);
+  form.reset();
+});
+</script>
+
+	
