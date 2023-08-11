@@ -202,3 +202,164 @@ console. log( typeof z, typeof q);
  // comparison operators always return boolean value
 
  
+// control flow
+
+//  for loop, while loop, do while loop
+
+
+// for(let x=0;x<=8;x++){ // step change
+//   console.log('I am sunil',x);
+// }
+//array
+ let disha= ['Maggie', 'Chowmein','india'];
+
+
+// // access the array values
+// console.log(disha[2]);
+// for(let i=0;i<disha.length;i++){ //
+//   console.log(disha[0]);
+// }
+// let i=0;
+// while(i<disha.length){
+//   console.log(disha[0]);
+//   i++;
+// }
+
+// let i=0;
+// do{
+// console.log("Sunil =",i);
+// i++;
+// }while(i>1);
+// console.log(typeof disha)
+
+// // while loop 
+// // row-> 4, column:5
+
+// for (let row; row<=5; row++){
+//   console.log('for loop', row);
+// }
+//  console.log('*******');
+
+//  let i=1;
+// while(i<=5){ // get statement-> conndition is mandatory
+// console.log('*', i);
+// i++; // if this isnt presnet, then infinite loop occurs.
+// }
+// let j=0;
+// while(j<disha.length){
+//   console.log("My favourite dish is = ", disha[j]);
+//   j++; // without this, statement will get infinite loop.
+// }
+
+// //Do-while loop
+// const greeting = (person) => {
+//   const name = person ? person.name : "stranger";
+//   return `Howdy, ${name}`;
+// };
+
+// console.log(greeting({ name: "Alice" })); // "Howdy, Alice"
+// console.log(greeting(0)); // "Howdy, stranger"
+
+
+// //q1:
+// // let arr1=[1,2,3,4,5];
+// // let arr2=[1,2,3,4,5];
+// // let sum1 = arr1.reduce((a,b) => a + b);
+// // let sum2 = arr2.reduce((a,b) => a + b);
+// // let sum =sum1+sum2;
+// // console.log("The sum of both arrays are: ", sum);
+
+
+// //q2:
+// // let n=prompt("Enter a number:");
+// // for( let i=2;i<=n;i+=2){
+// //   console.log(i);
+// // }
+
+// let n = 20;
+
+// for (let i = 2; i <= n; i++) {
+//   let isPrime = true;
+
+//   for (let j = 2; j < i; j++) {
+//     if (i % j === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+
+//   if (isPrime) {
+//     console.log(i);
+//   }
+// }202
+
+// conditional statements, if-else, switch, ternary operator
+
+// if-else// nested-if 
+// let budget=800;
+// if(budget>600){ // block scope
+//   console.log("Budget is tight");
+// }else if(budget>400){
+//   console.log("Budget is thik thak");
+// }else if(budget<200){
+//   console.log("Budget is okay");
+// }else{
+// console.log("Budget is not possible");
+// }
+// console.log("I am sunil");
+// console.log("I am sunil.");
+
+// break and continue statement -> jump statements
+// for (let k=1;k<=10;k++){
+//   if(k==3){
+//     break;
+//   }
+//   console.log(k);
+// }
+// switch statement
+// let day=4;
+// switch(day){
+//   case 1:  console.log("Monday");
+//  break;
+//     case 2:
+//       console.log("Tuesday");
+//       break;
+//       case 3:
+//         console.log("Wednesday");
+//        break;
+//         case 4:  console.log("Thursday");
+//         break;
+//           case 5:
+//    console.log("Friday");
+//    break;
+//    default:
+//  console.log("Sunday");
+// } 
+
+// ternary operator
+
+//-->left-riight approch in javascript
+
+// let menu=12;
+// let weigh=28;
+// if(menu>18){
+//   console.log("Aman");
+// }
+// else{
+//   console.log("sunil");
+// }
+// single line solution
+//  let resul=menu<18?weigh>28? "Qulify" : "Aman":"Sunil"; // tenrary operator
+// console.log(resul);
+
+// variable and block scope
+
+// global scope, block scope
+// let d=10; 
+// d=20// global scope
+// if(true){
+//  const w=10;
+//  console.log(d);
+// }
+// conditional;l stement &&, ||, !
+// global scope
